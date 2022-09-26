@@ -4,28 +4,18 @@ public class evenOdd {
     public static void main(String[] args) {
         //Write a program to print whether a number is even or odd, also take input from the user.
         boolean isprime = true;
+        System.out.print("Plese enter any Natural Number: ");
         Scanner in = new Scanner(System.in);
         int num = in.nextInt();
-        int ctn = 2;
-        while (ctn*ctn<= num){
-            if (num%ctn == 0){
-                isprime = false;
-                break;
-            }
-            ctn = ctn+1;
-        }
-        if( num==1 || num==0){
-            System.out.println("neither a prime nor a comosite");
-        } else if (num< 0) {
-            System.out.println("not a Natural number");
+        if (num<1){
+            System.out.println("Plese Enter a Number grater than 1!");
         } else {
-            if (isprime == true ){
-                System.out.println(num + " Is a Prime number.");
-            } else {
-                System.out.println(num + " Is not a Prime number.");
+            if (num%2 ==0){
+                System.out.println(num +" Is a Even number");
+            }
+            else {
+                System.out.println(num + " Is Odd Number");
             }
         }
-
-
     }
 }
