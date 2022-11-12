@@ -15,7 +15,7 @@ public class digitrepet {
             }
             num=num/10;
         }
-        System.out.println("Number "+rt+" is comes: "+cont+" times");
+        System.out.println("Number "+rt+" is comes: "+cont+" times.");
     }
     
 }
